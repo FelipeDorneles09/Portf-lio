@@ -13,6 +13,8 @@ declare module "@react-three/fiber" {
 
 extend({ ThreeGlobe });
 
+const isBrowser = typeof window !== 'undefined';
+
 const RING_PROPAGATION_SPEED = 3;
 const aspect = 1.2;
 const cameraZ = 300;
@@ -234,18 +236,25 @@ export function WebGLRendererConfig() {
   const { gl, size } = useThree();
 
   useEffect(() => {
-    gl.setPixelRatio(window.devicePixelRatio);
-    gl.setSize(size.width, size.height);
-    gl.setClearColor(0xffaaff, 0);
-  }, []);
+    if (isBrowser) {
+      gl.setPixelRatio(window.devicePixelRatio);
+      gl.setSize(size.width, size.height);
+      gl.setClearColor(0xffaaff, 0);
+    }
+  }, [gl, size]);
 
   return null;
 }
 
 export function World(props: WorldProps) {
   const { globeConfig } = props;
-  const scene = new Scene();
-  scene.fog = new Fog(0xffffff, 400, 2000);
+  const scene = isBrowser ? new Scene() : null;
+  if (isBrowser && scene) {
+    scene.fog = new Fog(0xffffff, 400, 2000);
+  }
+  
+  // Retornar nada se não estiver no navegador
+  if (!isBrowser) return null;
   return (
     <Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
       <WebGLRendererConfig />
