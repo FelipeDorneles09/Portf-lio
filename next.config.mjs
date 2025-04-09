@@ -1,6 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { withSentryConfig } from '@sentry/nextjs';
+import webpack from 'webpack';  // Adicione esta importação
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
