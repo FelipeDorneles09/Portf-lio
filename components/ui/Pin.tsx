@@ -28,10 +28,11 @@ export const PinContainer = ({
   };
 
   const handleClick = () => {
-    if (href) {
+    if (href && typeof window !== "undefined") {
       window.open(href, "_blank", "noopener noreferrer");
     }
   };
+  
 
   return (
     <div
