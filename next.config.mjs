@@ -13,7 +13,9 @@ const nextConfig = {
   // Adicione a configuração do webpack aqui
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      config.resolve.alias['@'] = path.resolve(__dirname, 'src');
+      config.resolve.push(new webpack.DefinePlugin({
+        'process.browser': JSON.stringify(false)
+      }))
     }
     return config;
   }
