@@ -14,7 +14,7 @@ const nextConfig = {
   // Adicione a configuração do webpack aqui
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      config.resolve.push(new webpack.DefinePlugin({
+      config.plugins.push(new webpack.DefinePlugin({
         'process.browser': JSON.stringify(false)
       }))
     }
