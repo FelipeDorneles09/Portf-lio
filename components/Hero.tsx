@@ -26,7 +26,7 @@ const Hero = () => {
             />
 
             <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Me chamo Felipe Dorneles de Carvalho e sou Desenvolvedor Fullstack. <br/> Tenho 17 anos e expêriencia no mercado de trabalho com manutenção de e-commerce.
+            Me chamo Felipe Dorneles de Carvalho e sou Desenvolvedor Fullstack. <br/> Tenho 18 anos e expêriencia no mercado de trabalho como desenvolvedor fullstack.
             </p>
 
             <a href="#about">
