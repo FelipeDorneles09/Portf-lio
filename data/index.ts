@@ -1,16 +1,17 @@
 export const navItems = [
-  { name: "Menu", link: "#hero" },
+  { name: "Início", link: "#hero" },
   { name: "Sobre", link: "#about" },
   { name: "Projetos", link: "#projects" },
-  { name: "Clientes", link: "#testimonials" },
+  { name: "Trajetória", link: "#experience" },
+  { name: "Metodologia", link: "#approach" },
   { name: "Contato", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "Minha prioridade é a produção, juntamente da comunicação",
-    description: "",
+    title: "Foco em arquitetura limpa, testes e entrega contínua",
+    description: "Engenharia de Software",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -19,8 +20,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Projetos de qualidade e dentro do prazo",
-    description: "",
+    title: "Comunicação clara e flexibilidade global",
+    description: "Atuação remota e híbrida",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -29,8 +30,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Tecnologias",
-    description: "Sempre adquirindo conhecimento",
+    title: "Minha Stack",
+    description: "Evolução técnica contínua",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -39,18 +40,17 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Apaixonado por desenvolver tecnologias",
-    description: "",
+    title: "Paixão por tecnologia, telemetria e IoT",
+    description: "Inovação contínua",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Atualmente desenvolvendo um aplicativo com React Native",
+    title: "Desenvolvendo software e telemetria na SkyDrones",
     description: "Ocupação atual",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -60,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Quer me contatar para começar um projeto?",
+    title: "Vamos iniciar um novo projeto juntos?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -73,131 +73,124 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "BuylyStore - E-commerce Fullstack",
-    des: "Plataforma de comércio eletrônico moderna construída com arquitetura modular e foco em performance, escalabilidade e experiência do usuário. ",
-    img: "/1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/c.svg"],
-    link: "https://buyly-store.vercel.app",
+    title: "SkyCloud - Telemetria e Gestão de Drones",
+    des: "Plataforma multi-tenant de telemetria em tempo real, replay 3D de voos com análise de parâmetros e gestão de frotas com Stripe.",
+    img: "/SkyCloud.png",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/cloud.svg", "/dock.svg"],
+    link: "https://docs.skydrones.com.br/skydrones-solutions/skyclean/skycloud",
   },
   {
     id: 2,
-    title: "BuylyStore - Dashboard de Admin",
-    des: "Painel administrativo moderno para e-commerce construído com arquitetura avançada, focado em segurança, performance e análise de dados.",
-    img: "/2.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/c.svg"],
-    link: "https://admin-buyly-store.vercel.app",
+    title: "ClinicOS - Gestão Hospitalar Full Stack",
+    des: "Gestão hospitalar em Docker com agendamento sem conflitos, RBAC via JWT e 45 testes automatizados (Jest, Vitest e Supertest).",
+    img: "/ClinicOs.png",
+    iconLists: ["/next.svg", "/ts.svg", "/dock.svg", "/re.svg", "/tail.svg"],
+    link: "https://github.com/FelipeDorneles09/ClinicOS",
   },
   {
     id: 3,
-    title: "Grilli Restaurant - Site Gourmet Responsivo",
-    des: "O projeto Grilli Restaurant é um site elegante e responsivo para um restaurante de alta gastronomia.",
-    img: "/3.svg",
-    iconLists: ["/re.svg", "/tail.svg"],
-    link: "https://grilli-master-indol.vercel.app",
+    title: "ArtFlow - SaaS de Gestão para Ateliês",
+    des: "SaaS completo com controle de estoque, cálculo de precificação, financeiro integrado ao Stripe e quadro Kanban com Zustand.",
+    img: "/ArtisticFlow.png",
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/stream.svg"],
+    link: "https://artflow-teal.vercel.app/",
   },
   {
     id: 4,
-    title: "Nexos - Plataforma de vendas de SaaS",
-    des: "Nexos é um website que oferece planos para pequenos negócios conseguirem adquirir seu próprio site por um baixo preço de aquisição e uma qualidade excelente.",
-    img: "/4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-    link: "https://nexos-six.vercel.app",
+    title: "SmartFarm - Dashboard IoT Agrícola",
+    des: "Dashboard IoT com telemetria em tempo real, acionamento remoto ESP32 (irrigação e ventilação) e API proxy resiliente.",
+    img: "/SmartFarm.png",
+    iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/tail.svg", "/cloud.svg"],
+    link: "https://smart-farm-rho.vercel.app/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Trabalhar com Felipe foi uma experiência incrível. Sua atenção aos detalhes, pontualidade e dedicação para entregar resultados excepcionais foram evidentes durante todo o projeto. A paixão de Felipe por cada aspecto do desenvolvimento realmente se destaca. Se você procura elevar seu site e sua marca, Felipe é o parceiro ideal.",
-    name: "Carlos Souza",
-    title: "CEO da TechWave Solutions",
+      "O Felipe demonstrou uma capacidade excepcional em liderar a arquitetura dos softwares das ground stations e da plataforma web, elevando o padrão técnico da nossa equipe.",
+    name: "Equipe de Engenharia Aviônica",
+    title: "SkyDrones Tecnologia Aviônica",
   },
   {
     quote:
-      "Felipe demonstrou um profissionalismo impressionante e uma habilidade técnica de alto nível. Sua capacidade de entender nossas necessidades e transformá-las em um site funcional e atraente foi simplesmente incrível. Recomendo fortemente seus serviços.",
-    name: "Ana Clara Mendes",
-    title: "Gerente de Projetos na Innovatech",
+      "O replay 3D e a ferramenta de logs reduziram o tempo de diagnóstico do suporte de 2 horas para 20 minutos. A facilidade de comunicação faz dele um profissional diferenciado.",
+    name: "Equipe de Operações e Suporte",
+    title: "SkyDrones Tecnologia Aviônica",
   },
   {
     quote:
-      "A colaboração com Felipe superou todas as expectativas. Ele é extremamente competente, sempre entregando as tarefas no prazo e com uma qualidade excepcional. A comunicação foi sempre clara e eficiente. Ele realmente entende como transformar ideias em realidade.",
-    name: "Mariana Oliveira",
-    title: "Diretora de Marketing na BrightFuture Inc.",
+      "O redesign e as automações criadas pelo Felipe aumentaram nossa conversão em 30% e cortaram o tempo de carregamento em 40%, gerando impacto real no negócio.",
+    name: "Diretoria Comercial",
+    title: "DrOriginals",
   },
   {
     quote:
-      "Felipe é um desenvolvedor talentoso e dedicado. Sua capacidade de resolver problemas complexos e fornecer soluções inovadoras foi fundamental para o sucesso do nosso projeto. É um prazer trabalhar com alguém tão apaixonado pelo que faz.",
-    name: "Ricardo Alves",
-    title: "CTO da GreenTech Labs",
-  },
-  {
-    quote:
-      "Recomendo Felipe sem hesitação. Sua habilidade de transformar nossas necessidades em um produto final de alta qualidade é impressionante. Ele é um profissional exemplar, sempre disponível para esclarecer dúvidas e garantir que tudo esteja perfeito.",
-    name: "Juliana Ferreira",
-    title: "CFO da NextGen Enterprises",
+      "A postura analítica do Felipe e seu raciocínio lógico (1º lugar na Olimpíada de Matemática) se refletem em código limpo, arquitetura escalável e sistemas confiáveis.",
+    name: "Coordenação Acadêmica de Engenharia de Software",
+    title: "UniLasalle",
   },
 ];
-
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 2,
+    name: "GCP / Cloud",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
   },
   {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
     name: "stream",
     img: "/s.svg",
     nameImg: "/streamName.svg",
   },
   {
+    id: 4,
+    name: "appwrite",
+    img: "/app.svg",
+    nameImg: "/appName.svg",
+  },
+  {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "HOSTINGER",
+    img: "/host.svg",
+    nameImg: "/hostName.svg",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Desenvolvedor Fullstack",
-    desc: "Diversos projetos desenvolvidos utilizando Typescript, React, React Native, NodeJS, Python, Java, C#, PHP",
+    title: "Engenheiro de Software Júnior - SkyDrones",
+    desc: "Ground stations de drones em Qt/QML e C++. Cliente NTRIP RTK nativo e navegação inercial com radar (90-95% de precisão sem RTK).",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Expêriencia de design",
-    desc: "Conhecimento de Photoshop e AfterEffects, utilizado nos projetos que desenvolvi.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "SkyCloud & Missões 3D - SkyDrones",
+    desc: "Plataforma web (Next.js, Node.js, GCP), replay 3D reduzindo análise de 2h para 20min e planos de limpeza 3D com Stripe.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Soluções Criativas",
-    desc: "Desenvolvimento de aplicativos e websites inovadores, transformando ideias em produtos digitais atraentes.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Desenvolvedor Web Full Stack - DrOriginals",
+    desc: "Redesign de e-commerce (+30% conversão, -40% carregamento), integração de estoque no Mercado Livre e automações em Python.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Criador de Experiências Digitais",
-    desc: "Transformação de conceitos em interfaces web interativas e intuitivas, utilizando tecnologias atuais para melhorar a experiência do usuário.",
+    title: "Engenharia de Software - UniLasalle",
+    desc: "Bacharelado em Engenharia de Software (1º lugar Olimpíada de Matemática). Foco em testes (Vitest/Jest), CI/CD e acessibilidade.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -207,7 +200,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: 'https://github.com/FelipeDorneles09',
+    link: "https://github.com/FelipeDorneles09",
   }, 
   {
     id: 2,

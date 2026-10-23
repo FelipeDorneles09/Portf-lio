@@ -7,21 +7,21 @@ import { title } from 'process';
 
 const Approach = () => {
     return (
-        <section className='w-full py-20'>
+        <section className='w-full py-20' id="approach">
           <h1 className='heading'>
-            Método de <span className='text-purple'>produção</span>
+            Metodologia de <span className='text-purple'>engenharia</span>
           </h1>
           <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-          <Card title="Planejamento e Estratégia" icon={<AceternityIcon order="Fase 1" />}
-      description="Vamos colaborar para mapear os objetivos do seu site, o público-alvo e as funcionalidades principais. Discutiremos questões como a estrutura do site, navegação e requisitos de conteúdo."
+          <Card title="Arquitetura e Requisitos" icon={<AceternityIcon order="Fase 1" />}
+      description="Levantamento de requisitos, arquitetura modular e modelagem de dados para sistemas robustos e escaláveis."
       >
         <CanvasRevealEffect
           animationSpeed={5.1}
           containerClassName="bg-emerald-900"
         />
       </Card>
-<Card title="Desenvolvimento e Atualização de Progresso" icon={<AceternityIcon order="Fase 2"/>}
-      description="Uma vez que concordarmos com o plano, coloco minha playlist de lofi e começo a codificar. Desde os esboços iniciais até o código polido, mantenho você atualizado em cada etapa do processo."
+<Card title="Desenvolvimento e Testes" icon={<AceternityIcon order="Fase 2"/>}
+      description="Código limpo em TypeScript, Next.js e C++/Qt, com testes automatizados (Vitest/Jest) e CI/CD sem regressões."
       >
         <CanvasRevealEffect
           animationSpeed={3}
@@ -33,8 +33,8 @@ const Approach = () => {
           dotSize={2}
         />
       </Card>
-<Card title="Desenvolvimento e Lançamento" icon={<AceternityIcon order="Fase 3"/>}
-      description="Aqui é onde a mágica acontece! Com base no design aprovado, traduzo tudo em código funcional, construindo seu site do zero."
+<Card title="Entrega Contínua e Telemetria" icon={<AceternityIcon order="Fase 3"/>}
+      description="Deploy automatizado em Docker e nuvem, telemetria em tempo real e padrões de acessibilidade."
       >
         <CanvasRevealEffect
           animationSpeed={3}

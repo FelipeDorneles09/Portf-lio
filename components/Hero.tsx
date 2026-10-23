@@ -18,24 +18,36 @@ const Hero = () => {
     </div>
 
     <div className='flex justify-center relative my-20 z-10'>
-        <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-            <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Felipe Dorneles de Carvalho</h2>
+        <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[65vw] flex flex-col items-center justify-center'>
+            <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-max'>
+                Felipe Dorneles de Carvalho • Engenheiro de Software Full Stack
+            </h2>
             <TextGenerateEffect
-             className='text-center -text-[40px] md:text-5xl lg:text-6xl'
-            words='Transformando Ideias em Experiências Digitais Impactantes'
+             className='text-center text-[38px] md:text-5xl lg:text-6xl'
+             words='Engenharia de Software de Alta Performance, da Interface ao Embarcado'
             />
 
-            <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Me chamo Felipe Dorneles de Carvalho e sou Desenvolvedor Fullstack. <br/> Tenho 18 anos e expêriencia no mercado de trabalho como desenvolvedor fullstack.
+            <p className='text-center md:tracking-wider mb-6 text-sm md:text-base lg:text-xl text-white-100 max-w-2xl'>
+                Engenheiro de Software Full Stack com quase 3 anos de experiência em sistemas de missão crítica e telemetria na SkyDrones. Especialista em TypeScript, Next.js, Node.js e C++/Qt.
             </p>
 
-            <a href="#about">
-                <MagicButton
-                title="Minhas qualidades"
-                icon={<FaLocationArrow />}
-                position='right'
-                />
-            </a>
+            <div className='flex flex-wrap items-center justify-center gap-4'>
+                <a href="#projects">
+                    <MagicButton
+                    title="Explorar Projetos"
+                    icon={<FaLocationArrow />}
+                    position='right'
+                    />
+                </a>
+                <a href="#experience">
+                    <MagicButton
+                    title="Ver Trajetória"
+                    icon={<FaLocationArrow />}
+                    position='right'
+                    otherClasses="!bg-[#0e1329]"
+                    />
+                </a>
+            </div>
         </div>
     </div>
 
